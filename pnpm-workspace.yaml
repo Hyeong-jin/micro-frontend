@@ -1,0 +1,4 @@
+packages:
+  - 'packages/*'
+  - 'module-federation/*'
+  - 'vite-plugin-federation/*'

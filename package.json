@@ -1,0 +1,18 @@
+{
+  "name": "micro-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pure": "pnpm --filter app-pure",
+    "shadowdom": "pnpm --filter app-shadowdom",
+    "webcomponents": "pnpm --filter app-webcomponents",
+    "dev": "pnpm --filter host --filter app-* -r dev",
+    "ui": "pnpm --filter ui",
+    "host": "pnpm --filter host",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
