@@ -1,0 +1,30 @@
+{
+  "name": "micro-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mf": "pnpm --filter mf-*",
+    "consumer": "pnpm --filter mf-consumer",
+    "provider": "pnpm --filter mf-module*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "20.18.1",
+    "pnpm": "10.0.0"
+  },
+  "resolutions": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@module-federation/vite": "1.2.2",
+    "@module-federation/native-federation-typescript": "0.6.0",
+    "@module-federation/runtime": "0.9.0",
+    "react-shadow": "20.6.0",
+    "react-shadow-scope": "1.0.11",
+    "vite": "6.1.0",
+    "typescript": "5.7.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
