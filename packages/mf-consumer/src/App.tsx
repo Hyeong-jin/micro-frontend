@@ -108,7 +108,14 @@ const ModuleLoader = ({ moduleId }: { moduleId: string }) => {
   const Component = lazy(() => loadRemote<any>(moduleId));
 
   return (
-    <ErrorBoundary fallback={<h1>Failed to load {moduleId}</h1>}>
+    <ErrorBoundary
+      fallback={
+        <h1>
+          Error loading module:
+          {moduleId}
+        </h1>
+      }
+    >
       <Suspense fallback={<h1>Loading... {moduleId}</h1>}>
         <Component />
       </Suspense>
@@ -173,7 +180,7 @@ function App() {
             <button onClick={loadModule3}>Module 3</button>
           </>
         )}
-            <button onClick={loadModule4}>Retry fetch</button>
+        <button onClick={loadModule4}>Retry fetch</button>
 
         <hr />
       </header>
